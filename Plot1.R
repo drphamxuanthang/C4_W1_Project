@@ -11,8 +11,8 @@ View(HPC)
 
 # Filter data (subset data) & Convert the date format
 library(dplyr)
-data <- filter(HPC, Date == "01/02/2007" | Date == "01/02/2007")
-data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
+HPC$Date <- as.Date(HPC$Date, format = "%d/%m/%Y")
+data <- filter(HPC, Date == "2007-02-01" | Date == "2007-02-02")
 data$Datetime <- as.POSIXct(paste(data$Date, data$Time))
 
 # Generate plot1
