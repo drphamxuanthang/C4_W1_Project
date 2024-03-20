@@ -23,3 +23,8 @@ with(data, {plot(Sub_metering_1~Datetime, type="l", ylab="Global Active Power (k
   lines(Sub_metering_3~Datetime,col='Blue')
 })
 legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+
+
+# Export PNG
+dev.copy(png, file = "Plot3.png")
+dev.off()

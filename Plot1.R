@@ -19,3 +19,7 @@ data$Datetime <- as.POSIXct(datetime)
 # Generate plot1
 hist(data$Global_active_power, main="Global Active Power", 
      xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Pink")
+
+# Export PNG
+dev.copy(png, file = "Plot1.png")
+dev.off()
