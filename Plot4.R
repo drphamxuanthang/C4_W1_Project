@@ -21,11 +21,11 @@ with(data, {
   plot(Global_active_power~Datetime, type="l", ylab="Global Active Power (kilowatts)", xlab="")   ## Plot1
   plot(Voltage~Datetime, type="l", ylab="Voltage (volt)", xlab="")                                ## Plot2
   with(data, {plot(Sub_metering_1~Datetime, ylab="Global Active Power (kilowatts)", xlab="",type="n") ## Plot3
-    lines(Sub_metering_1~Datetime,col='Black')
-    lines(Sub_metering_2~Datetime,col='Red')
-    lines(Sub_metering_3~Datetime,col='Blue')
-  })
-  legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+              lines(Sub_metering_1~Datetime,col='Black')
+              lines(Sub_metering_2~Datetime,col='Red')
+              lines(Sub_metering_3~Datetime,col='Blue')
+              })
+      legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
   plot(Global_reactive_power~Datetime, type="l", ylab="Global Rective Power (kilowatts)",xlab="") ## Plot4
 })
 
