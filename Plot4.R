@@ -29,6 +29,6 @@ with(data, {
   plot(Global_reactive_power~Datetime, type="l", ylab="Global Rective Power (kilowatts)",xlab="") ## Plot4
 })
 
-# Export PNG
+# Export PNG 
 dev.copy(png, file = "Plot4.png")
 dev.off()
